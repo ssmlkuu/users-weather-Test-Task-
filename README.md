@@ -41,6 +41,7 @@ src/
     UserCard.tsx
     WeatherBadge.tsx
     WeatherModal.tsx
+    Spinner.tsx
   hooks/
     useSavedUsers.ts
     useWeatherCodes.ts
@@ -76,25 +77,11 @@ npm run dev
 * `useSavedUsers` хранит данные в `localStorage` (ключ `saved-users-v1`), снапшот как строка — без ложных апдейтов
 * Модалка блокирует скролл боди, закрывается по Esc/overlay, есть автообновление
 
-## ♿ Доступность
-
-* Фокус по Esc, aria-атрибуты диалогу, `focus-visible` у интерактивов
-
 ## 🚀 Деплой
 
 ### Vercel
 
-1. New Project → Import из GitHub → Framework: **Vite**
-2. При необходимости добавить `vercel.json` (SPA fallback):
-
-```json
-{
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
-  ]
-}
-```
+ https://users-weather-test-task.vercel.app/
 
 ### Пример секции «AI usage» для README
 
